@@ -1,7 +1,8 @@
 
 //let accessToken = 'brwQxtyNB8QezWGo1Lw6p3MZxBhyKJ7tL8T7VhBA2QoCAyurKhmCxvaOMGuEtkcP39_uZSdKu3dVcJGRpHdlLzYSl2VEZIOp8SYb_rKfSejCFGSnMF1d41ZKh-4u1-tV4oI7gKMQtERmHBgGG9kThvl56Oj9R-ajCLVJ6ilEw';
 const clientId = '82eaac3465024011ada89dc1c8c8ca33';
-const redirectUri= 'http://localhost:3000/'
+const redirectUri= 'https://master.d3g55z3cy2qlwz.amplifyapp.com/'
+
 const authEndpoint = 'https://accounts.spotify.com/authorize';
 
 let accessToken;
