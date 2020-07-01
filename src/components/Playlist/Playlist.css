@@ -1,0 +1,116 @@
+.Playlist {
+  
+}
+.CreatePlaylistContent .TrackList {
+  max-height: 370px;
+  overflow: auto ;
+}
+.CreatePlaylistcollapsible {
+  position: absolute;
+  outline: none;
+  margin: 20px;
+  width: fit-content;
+  background-color: transparent;
+  color: #00C3DD;
+  cursor: pointer;
+  padding: 18px;
+  text-align: center;
+  border: 2px solid #00C3DD;
+  border-radius: 25px;
+  font-size: 15px;
+  margin-top: auto;
+  font-weight: 500;
+  top: 90%;
+  left: 80%;
+}
+.active, .CreatePlaylistcollapsible:hover {
+  background-color: #ccc;
+  color: white;
+  background-color: #00C3DD;
+}
+
+.CreatePlaylistContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  max-height: 500px;
+  padding: 2.27rem 1.16rem;
+  background-color: rgba(1, 12, 63, 0.7);
+  box-shadow: 0 4px 2px 2px #000000;
+  animation: showPlaylist 0.3s ease-in;
+  transition: opacity 1s ease-out;
+
+}
+@keyframes showPlaylist {
+  from {
+    margin-top: 100px;
+    opacity   : 0.25;
+  }
+  to {
+    margin-top: 5px;
+    opacity   : 1;
+  }
+}
+.CreatePlaylistContent input {
+  width: 100%;
+  border: none;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #6f6f6f;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.55rem;
+  color: #fff;
+}
+
+.Playlist-save {
+  outline: none;
+  align-self: flex-end;
+  cursor: pointer;
+  width: 10rem;
+  padding: .77rem 0;
+  border-radius: 54px;
+  border: 2px solid #00C3DD;
+  margin-top: 1.27rem;
+  background-color: transparent;
+  text-align: center;
+  font-size: .83rem;
+  transition: background-color .25s;
+  color: #00C3DD;
+  font-weight: 500;
+}
+
+.Playlist-save:hover {
+  background-color: #00C3DD;
+  color: white;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+@media only screen and (max-width: 1020px) {
+  .Playlist {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .CreatePlaylistcollapsible {
+    position: fixed;
+    top: 85%;
+    left: 80%;
+  }
+  .CreatePlaylistcollapsible {
+    margin: 0px;
+    width: 50px;
+    height: 50px;
+    background-image: url('./icons_music.svg');
+    background-size: auto;
+    cursor: pointer;
+    padding: 0px;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 0px;
+    margin-top: 0px;
+  }
+}

@@ -1,0 +1,15 @@
+.ArtistProfile {
+    text-align: center;
+    color: white;
+}
+.ArtistProfile img{
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+}
+.ArtistProfile p {
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}

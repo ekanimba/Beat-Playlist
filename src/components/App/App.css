@@ -1,0 +1,45 @@
+.AppBackground {
+  background-color: #182843;
+  height: 100vh;
+}
+.App {
+
+  background-color: #182843;
+  display: flex;
+  border: 4px solid #1D516E;
+  height: 100vh;
+  padding: 30px;
+}
+
+.Menu {
+  width: 250px;
+  height: 90%;
+  background-color: #0C1221;
+  display: flex;
+  flex-direction: column;
+}
+.Content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Player {
+  position: sticky;
+  left: 10;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  text-align: center;
+}
+.App-playlist {
+  display: flex;
+}
+
+@media only screen and (max-width: 480px) {
+  .App {
+    flex-direction: column;
+    padding: 5px;
+    height: fit-content;
+  }
+}

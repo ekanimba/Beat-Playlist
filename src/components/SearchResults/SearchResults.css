@@ -1,0 +1,60 @@
+.Results {
+  width: auto;
+  max-height: 590px;
+  padding: .88rem;
+  background-color: #0C1221;
+  box-shadow: 0 4px 2px 2px #000000;
+  margin:20px;
+}
+.SearchResults {
+  display: flex;
+  flex-direction: column;
+}
+.SongsAlbums {
+  margin-top: 20px;
+  display: flex;
+  max-height: 400px;
+}
+.Songs {
+  overflow-y: scroll;
+}
+
+.Albums{
+  overflow-y: scroll;
+  margin-left: 20px;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #00C3DD;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+@media only screen and (max-width: 1050px) {
+  .SearchResults {
+
+    margin-bottom: 2rem;
+    
+  }
+  .SongsAlbums {
+    flex-direction: column;
+  }
+  .Albums{
+    
+    margin-left: 0px;
+    height: 1200px;
+    flex-direction: row;
+  }
+  .Songs {
+    height: 1200px;
+  }
+  .Results {
+    max-height: 700px;
+  }
+}

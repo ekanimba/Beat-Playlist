@@ -1,0 +1,16 @@
+.UserProfile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.UserProfile{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    align-items: center;
+}
+.UserProfile p{
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
